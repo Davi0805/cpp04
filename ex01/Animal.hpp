@@ -6,7 +6,7 @@
 /*   By: dmelo-ca <dmelo-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:06:33 by dmelo-ca          #+#    #+#             */
-/*   Updated: 2025/03/03 19:02:49 by dmelo-ca         ###   ########.fr       */
+/*   Updated: 2025/03/04 17:07:40 by dmelo-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,13 @@ public:
     Animal();
     virtual ~Animal();
 
+    Animal(Animal& copy);
+    Animal& operator=(Animal& copy);
+    
     virtual void makeSound();
+
+    //Getter
+    std::string getType() const;
 };
 
 #endif //ANIMAL_HPP

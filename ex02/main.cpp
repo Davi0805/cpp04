@@ -6,7 +6,7 @@
 /*   By: dmelo-ca <dmelo-ca@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 18:06:12 by dmelo-ca          #+#    #+#             */
-/*   Updated: 2025/03/03 19:24:03 by dmelo-ca         ###   ########.fr       */
+/*   Updated: 2025/03/04 17:14:29 by dmelo-ca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@
 // TODO: CANONICAL ORTODOX
 int main(void)
 {
-    Animal *abstract = new Animal;
+    Animal *abstract = NULL;
 
-    abstract->makeSound();
+/*     abstract->makeSound();
     
-    std::cout << std::endl;
+    std::cout << std::endl; */
 
     abstract = new Dog;
 
